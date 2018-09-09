@@ -3,6 +3,23 @@ body {
     font: normal 1rem/1.6rem Arial, sans-serif;
 }
 
+a {
+    color: $primaryColour;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: lighten($primaryColour, 10);
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: darken($primaryColour, 10);
+    }
+}
+
 p {
     margin: 0 0 1.6rem;
 

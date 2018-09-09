@@ -47,7 +47,7 @@
 
 <section class="band">
     <p>
-        TODO: Main content
+        TODO: Main <a href="#">content</a>
     </p>
     <p>
         TODO: Main content
