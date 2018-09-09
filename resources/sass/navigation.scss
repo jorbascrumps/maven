@@ -1,4 +1,4 @@
-$mobileBreakpoint: 890px;
+$mobileBreakpoint: 830px;
 
 nav {
     display: flex;
@@ -63,7 +63,6 @@ nav {
             background: initial;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             height: initial;
             justify-content: flex-end;
             opacity: initial;
@@ -78,6 +77,7 @@ nav {
                     color: $white;
                     font-size: 0.85rem;
                     text-decoration: none;
+                    white-space: nowrap;
                 }
             }
         }

@@ -24,7 +24,6 @@
         <img
             alt="Maven &amp; Co. logo"
             src="{{ asset('img/logo.png') }}"
-            width="280"
         />
         <nav>
             <button
