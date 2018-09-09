@@ -60,7 +60,7 @@
 </section>
 
 <section class="band">
-    <p>
+    <p class="colophon">
         &copy;{{ now()->year }} Maven &amp; Co. Event Coordination. All rights reserved.
     </p>
 </section>
