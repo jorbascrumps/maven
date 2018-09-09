@@ -11,12 +11,12 @@ a {
     &:active,
     &:focus,
     &:hover {
-        color: lighten($primaryColour, 10);
+        color: darken($primaryColour, 10);
         text-decoration: none;
     }
 
     &:visited {
-        color: darken($primaryColour, 10);
+        color: lighten($primaryColour, 10);
     }
 }
 
