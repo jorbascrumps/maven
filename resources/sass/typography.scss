@@ -13,7 +13,7 @@ a {
     &:hover {
         color: darken($primaryColour, 10);
         text-decoration: none;
-        transition: color 0.15s linear;
+        transition: color $interactionAnimDuration linear;
     }
 
     &:visited {
