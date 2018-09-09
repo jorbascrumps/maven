@@ -1,22 +1,31 @@
+const attachObserver = observer => target => observer.observe(target);
+const detachObserver = observer => target => observer.unobserve(target);
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+const observerCallback = (entries, observer) => entries
+    .filter(entry => entry.isIntersecting)
+    .map(({ target }) => target)
+    .map(preloadImage)
+    .map(detachObserver(observer));
 
-require('./bootstrap');
+const preloadImage = target => {
+    const src = target.getAttribute('data-src');
 
-window.Vue = require('vue');
+    if (src) {
+        // target.removeAttribute('data-src');
+        target.classList.add('fadeInFull')
+        target.setAttribute('src', src);
+        target.addEventListener('load', () => console.log('loaded'));
+    }
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+    return target;
+}
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
+const observer = new IntersectionObserver(observerCallback, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.75
 });
+
+Array
+    .from(document.querySelectorAll('[data-src]'))
+    .forEach(attachObserver(observer));
