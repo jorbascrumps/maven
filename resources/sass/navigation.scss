@@ -56,7 +56,13 @@ nav {
             width: initial;
 
             li {
-                margin: 0 20px;
+                margin: 0 0.8rem;
+
+                a {
+                    color: $white;
+                    font-size: 0.85rem;
+                    text-decoration: none;
+                }
             }
         }
     }
