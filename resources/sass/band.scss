@@ -1,0 +1,18 @@
+.band {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+
+    &.dark {
+        background: $black;
+    }
+
+    &.primary {
+        background: $primaryColour;
+    }
+
+    & > * {
+        max-width: 800px;
+        width: 100%;
+    }
+}

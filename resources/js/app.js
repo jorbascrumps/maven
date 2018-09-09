@@ -29,3 +29,8 @@ const observer = new IntersectionObserver(observerCallback, {
 Array
     .from(document.querySelectorAll('[data-src]'))
     .forEach(attachObserver(observer));
+
+jsToggleNavigation.addEventListener('click', ({ target }) => {
+    const isExpanded = !(target.getAttribute('aria-expanded') === 'true');
+    target.setAttribute('aria-expanded', isExpanded);
+});
