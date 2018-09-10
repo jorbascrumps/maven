@@ -38,7 +38,7 @@
                 <li><a href="#">Services</a></li>
                 <li><a href="#"><abbr title="Frequent asked questions">FAQ</abbr></a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Book your free consultation</a></li>
+                <li><a class="button" href="#">Book your FREE consultation</a></li>
             </ul>
         </nav>
     </header>

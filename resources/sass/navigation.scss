@@ -60,6 +60,7 @@ nav {
         }
 
         @media (min-width: $mobileBreakpoint) {
+            align-items: center;
             background: initial;
             display: flex;
             flex-direction: row;
