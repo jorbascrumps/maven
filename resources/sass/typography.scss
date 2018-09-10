@@ -7,13 +7,13 @@ a {
     color: $primaryColour;
     font-weight: bold;
     text-decoration: underline;
+    transition: all $interactionAnimDuration ease 0s;
 
     &:active,
     &:focus,
     &:hover {
         color: darken($primaryColour, 10);
         text-decoration: none;
-        transition: color $interactionAnimDuration linear;
     }
 
     &:visited {
