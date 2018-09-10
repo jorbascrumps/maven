@@ -53,6 +53,13 @@
     </p>
 </section>
 
+<section class="band">
+    <div>
+        <a class="button" href="#">Book your FREE consultation</a>
+        <a class="button primary" href="#">BOOK NOW</a>
+    </div>
+</section>
+
 <section class="band dark">
     <footer>
         TODO: Links

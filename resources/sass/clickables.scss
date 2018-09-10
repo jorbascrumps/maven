@@ -1,0 +1,29 @@
+.button {
+    border: 0.1rem solid $black;
+    color: $black;
+    display: inline-block;
+    line-height: 1.0rem;
+    padding: 0.85rem 0.85rem 0.725rem;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        border-color: $primaryColour;
+        color: $primaryColour;
+    }
+
+    &.primary {
+        background-color: $white;
+        border-color: $primaryColour;
+        color: $primaryColour;
+        text-transform: uppercase;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $primaryColour;
+            color: $black;
+        }
+    }
+}
