@@ -34,11 +34,11 @@
                 &#9776;
             </button>
             <ul id="navigation">
-                <li><a href="#">About Maven &amp; Co.</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#"><abbr title="Frequent asked questions">FAQ</abbr></a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="button" href="#">Book your FREE consultation</a></li>
+                <li><a href="{{ route('about') }}">About Maven &amp; Co.</a></li>
+                <li><a href="{{ route('services.speech') }}">Services</a></li>
+                <li><a href="{{ route('faq') }}"><abbr title="Frequent asked questions">FAQ</abbr></a></li>
+                <li><a href="{{ route('about') }}">Contact</a></li>
+                <li><a class="button" href="{{ route('book') }}">Book your FREE consultation</a></li>
             </ul>
         </nav>
     </header>
